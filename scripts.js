@@ -1,9 +1,17 @@
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+const formLogin = document.getElementById("login-form");
+const formRegister = document.getElementById("register-form");
 
-<script>
+formRegister.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(formRegister);
+    console.log(data.values((elem) => console.log(elem)));
+});
+
+console.log("hola");
+console.log(formRegister);
+
 function mostrarEmail(){
     var email=document.getElementById('email').value;
     document.getElementById('emailLabel').innerText='Se ha enviado un correo de confirmación a: '+email;
 }
-</script>
 

@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Iconos redes sociales https://codepen.io/mosbth/pen/qBEeJpg-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link href="/your_path_to_version_6_files/css/fontawesome.css" rel="stylesheet">
-        <!--Iconos generales https://www.bootstrapcdn.com-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-        <title>El clima en tus manos/Weather-App</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="scripts.js">
-    </head>
-    <script>
-        function mostrarEmail(){
-            var email=document.getElementById('email').value;
-            document.getElementById('emailLabel').innerText='Se ha enviado un correo de confirmación a: '+email;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Iconos redes sociales https://codepen.io/mosbth/pen/qBEeJpg-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="/your_path_to_version_6_files/css/fontawesome.css" rel="stylesheet">
+    <!--Iconos generales https://www.bootstrapcdn.com-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <title>El clima en tus manos/Weather-App</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #register {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 80vh;
         }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        #register form {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 5em;
+            border-radius: 0.5em;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div>
+            <img src="assets/img/icono.jpeg" />
+        </div>
         <nav>
             <ul>
                 <li>
                     <a href="Home.html">Inicio</a>
                 </li>
                 <li>
-                    <a href="Login.html">Iniciar sesion</a>
+                    <a href="Login.html">Iniciar sesión</a>
                 </li>
                 <li>
                     <a href="Register.html">Registrar</a>
@@ -40,74 +49,63 @@
             </ul>
         </nav>
     </header>
-    </header>
-    <div class="container">
-        <div action="#" class="Register-form">
-        <h2>Registrar.</h2>
-        <div class="input-group">
-        <label for="name">Nombres</label>
-        <input type="text" id="name" name="name">
-        <label for="Surnames">Apellidos</label>
-        <input type="text" id="Surnames" name="Contraseña">
-    </div>
-    <div class="input-group">
-        <label for="username">Usuario</label>
-        <input type="username" id="user" name="usuario">
-        <label for="username">Repetir Usuario</label>
-        <input type="username" id="user" name="contraseña">
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" name="Contraseña">
-        <label for="password">Repetir Contraseña</label>
-        <input type="password" id="password" name="repite Contraseña">
-        <label for="direccion">Pais</label>
-        <input type="text" id="pais">
-        <label for="direccion">Dirección</label>
-        <input type="text" id="direccion">
-        <label for="date">Fecha de Nacimiento</label>
-        <input type="date" name="Fecha" name="fecha">
-        <label for="telefono">Telefono de Contacto</label>
-        <input type="tel" id="tel" name="telefono"><br>
-        <label for="email">Correo Electronico</label>
-        <input type="email" id="email" name="email" x-moz-errormessage="Por favor, especifique una dirección de correo válida.">
-        <label for="email" x-moz-errormessage="Por favor, especifique una dirección de correo válida.">Repetir Correo Electronico</label>
-        <input type="email" id="email" name="repetir Electronico">
-        <button type="submit" name="submit" value="Registrar" onclick="mostrarEmail()">Registrar</button>
-    </div>
-    <label id="emailLabel"></label>
-    <a href="Login.html">Ya Tengo una cuenta</a>
+<main>
+    <section id="register">
+        <form id="register-form">
+            <h2>Registro</h2>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div>
+                <label for="confirmar-contrasena">Confirmar contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+            </div>
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+</main>
 
-
-
-
-    
-
-
-
-
-    <footer>
-        <div class="flag-wrapper">
-            <div class="icon-text">
+<footer>
+    <div class="flag-wrapper">
+        <div class="icon-text">
             <div class="icon-text-icon">
             </div>
-        <div class="icon-text-text">
-            <li class="social">
-            <li>
-                <a href="mailto:serviciotecnicogc2014@gmail.com" target="_blank">
-            <i class="fa fa-envelope-o"> Correo</i>
-            </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/FormateosGR606" target="_blank">
-            <i class="fa fa-facebook-square"> Facebook</i>
-            </a>
-            </li>
-            <a href="https://www.instagram.com/Gabrielramos606/?fbclid=IwAR3nZOUevzCqOgAlALa4Ph-YlFWv4eheu7sgwrwxhwL03x80u3tnd2BwcGs" target="_blank">
-            <i class="fa fa-instagram"> Instagram</i></a></li></ul>
-        </div>
-        <p>&copy; 2024. <a href="https://www.facebook.com/FormateosGR606" target="_blank">Todos los derechos reservados. GRamos.</a>
-        </p>
+            <div class="icon-text-text">
+                <ul class="social">
+                    <li>
+                        <a href="mailto:serviciotecnicogc2014@gmail.com" target="_blank">
+                            <i class="fa fa-envelope-o"></i> Correo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/FormateosGR606" target="_blank">
+                            <i class="fa fa-facebook-square"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/Gabrielramos606/?fbclid=IwAR3nZOUevzCqOgAlALa4Ph-YlFWv4eheu7sgwrwxhwL03x80u3tnd2BwcGs" target="_blank">
+                            <i class="fa fa-instagram"></i> Instagram
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <p>&copy; 2024. <a href="https://www.facebook.com/FormateosGR606" target="_blank">Todos los derechos reservados. GRamos.</a></p>
+    </div>
+</footer>
+<script src="scripts.js"></script>
 </body>
 </html>
