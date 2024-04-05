@@ -1,116 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Iconos redes sociales https://codepen.io/mosbth/pen/qBEeJpg-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <link href="/your_path_to_version_6_files/css/fontawesome.css" rel="stylesheet">
-        <!--Iconos generales https://www.bootstrapcdn.com-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-        <title>El clima en tus manos/Weather-App</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="scripts.js">
-    </head>
-    <body>
-        <header>
-            <div>
-                <img src="assets/img/icono.jpeg" />
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="Home.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="Login.html">Iniciar sesión</a>
-                    </li>
-                    <li>
-                        <a href="Register.html">Registrar</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Contactos</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body>
-<table>
-  <tr>
-    <th>Nombre</th>
-    <th>Email</th>
-    <th>Teléfono</th>
-  </tr>
-  <tr>
-    <td>Eybert Nieves</td>
-    <td>eybertnieves@gmail.com</td>
-    <td>04141153563</td>
-  </tr>
-  <tr>
-    <td>Jeanfraiber Medina</td>
-    <td>jeantonio24@gmail.com</td>
-    <td>04122786023</td>
-  </tr>
-  <tr>
-    <td>Gabriel Ramos</td>
-    <td>gabielalejandro606@gmail.com</td>
-    <td>04241166875</td>
-  </tr>
-</table>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Iconos redes sociales https://codepen.io/mosbth/pen/qBEeJpg-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="/your_path_to_version_6_files/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <!--Iconos generales https://www.bootstrapcdn.com-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <title>El clima en tus manos/Weather-App</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="scripts.js" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="assets/img/icono.jpeg" />
+      </div>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a href="Home.html">Inicio</a>
+          </li>
+          <li>
+            <a href="Login.html">Iniciar sesión</a>
+          </li>
+          <li>
+            <a href="Register.html">Registrar</a>
+          </li>
+          <li>
+            <a href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <dialog>
+      <h1>Seguro que quieres cerrar sesion?</h1>
+      <button id="cerrar-sesion__confirmacion">Si</button>
+      <button id="cerrar-modal">No</button>
+    </dialog>
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lista de Contactos</title>
+      </head>
+      <body>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+          </tr>
+          <tr>
+            <td>Eybert Nieves</td>
+            <td>eybertnieves@gmail.com</td>
+            <td>04141153563</td>
+          </tr>
+          <tr>
+            <td>Jeanfraiber Medina</td>
+            <td>jeantonio24@gmail.com</td>
+            <td>04122786023</td>
+          </tr>
+          <tr>
+            <td>Gabriel Ramos</td>
+            <td>gabielalejandro606@gmail.com</td>
+            <td>04241166875</td>
+          </tr>
+        </table>
+      </body>
+    </html>
 
-</body>
+    <footer>
+      <div class="flag-wrapper">
+        <div class="icon-text">
+          <div class="icon-text-icon"></div>
+          <div class="icon-text-text">
+            <ul class="social">
+              <li>
+                <a
+                  href="mailto:serviciotecnicogc2014@gmail.com"
+                  target="_blank"
+                >
+                  <i class="fa fa-envelope-o"></i> Correo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/FormateosGR606"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook-square"></i> Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/Gabrielramos606/?fbclid=IwAR3nZOUevzCqOgAlALa4Ph-YlFWv4eheu7sgwrwxhwL03x80u3tnd2BwcGs"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram"></i> Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          &copy; 2024.
+          <a href="https://www.facebook.com/FormateosGR606" target="_blank"
+            >Todos los derechos reservados. GRamos.</a
+          >
+        </p>
+      </div>
+      <script src="scripts/main.js"></script>
+    </footer>
+  </body>
 </html>
-
-        <footer>
-            <div class="flag-wrapper">
-                <div class="icon-text">
-                    <div class="icon-text-icon">
-                    </div>
-                    <div class="icon-text-text">
-                        <ul class="social">
-                            <li>
-                                <a href="mailto:serviciotecnicogc2014@gmail.com" target="_blank">
-                                    <i class="fa fa-envelope-o"></i> Correo
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/FormateosGR606" target="_blank">
-                                    <i class="fa fa-facebook-square"></i> Facebook
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/Gabrielramos606/?fbclid=IwAR3nZOUevzCqOgAlALa4Ph-YlFWv4eheu7sgwrwxhwL03x80u3tnd2BwcGs" target="_blank">
-                                    <i class="fa fa-instagram"></i> Instagram
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <p>&copy; 2024. <a href="https://www.facebook.com/FormateosGR606" target="_blank">Todos los derechos reservados. GRamos.</a></p>
-            </div>
-        </footer>
-        </body>
-        </html>
-        
