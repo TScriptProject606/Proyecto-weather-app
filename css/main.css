@@ -60,14 +60,20 @@ dialog::backdrop {
 }
 
 #perfil {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5em;
     padding: 5em 0;
+    text-align: center;
 }
-
 
     /*Tabla de contactos*/
 table {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5em;
+    border-radius: 0.5em;
     width: 100%;
     border-collapse: collapse;
+    color: #5d29cd;
 }
 
 th,td {
@@ -82,7 +88,7 @@ th {
 
 /* Estilos de la cabecera */
 header {
-    background-color: #333;
+    background-color: #0e1425;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -119,15 +125,47 @@ ul {
 
 /* Estilos del cuerpo */
 section {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5em;
+    border-radius: 0.5em;
+    opacity: 65%;
     padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 h1 {
-    color: #333;
+    color: #842ba7;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    color: #b02424;
 }
 
 h5 {
-    color: #666;
+    color: #258d82;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #7f2abb;
+}
+
+strong {
+    font-weight: bold;
+    color: #007bff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Estilos del pie de página */
@@ -156,17 +194,6 @@ footer {
 .social li a:hover {
     color: #ccc;
 }
-
-dialog::backdrop {
-    background-image: linear-gradient(
-        45deg,
-        magenta,
-        rebeccapurple,
-        dodgerblue,
-        green
-    );
-    opacity: 0.75;
-    }
 
 /* Estilos responsivos */
 
