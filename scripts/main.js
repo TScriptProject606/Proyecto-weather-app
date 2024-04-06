@@ -9,6 +9,9 @@ if (userLogged) {
         <a href="Home.html">Inicio</a>
       </li>
       <li>
+        <a href="index.html">Mi Clima</a>
+      </li>
+      <li>
         <a href="perfil.html">Mi Perfil</a>
       </li>
       <li>

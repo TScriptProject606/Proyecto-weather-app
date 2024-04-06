@@ -24,6 +24,17 @@
     <title>El clima en tus manos/Weather-App</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="scripts.js" />
+    <style>
+      #contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 0.5em;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -52,36 +63,36 @@
       <button id="cerrar-sesion__confirmacion">Si</button>
       <button id="cerrar-modal">No</button>
     </dialog>
-    <!DOCTYPE html>
-    <html lang="es">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lista de Contactos</title>
-      </head>
       <body>
-        <table>
-          <tr>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Teléfono</th>
-          </tr>
-          <tr>
-            <td>Eybert Nieves</td>
-            <td>eybertnieves@gmail.com</td>
-            <td>04141153563</td>
-          </tr>
-          <tr>
-            <td>Jeanfraiber Medina</td>
-            <td>jeantonio24@gmail.com</td>
-            <td>04122786023</td>
-          </tr>
-          <tr>
-            <td>Gabriel Ramos</td>
-            <td>gabielalejandro606@gmail.com</td>
-            <td>04241166875</td>
-          </tr>
-        </table>
+        <section id="contact">
+          <h1>Contactanos</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Eybert Nieves</td>
+                <td>eybertnieves@gmail.com</td>
+                <td>04141153563</td>
+              </tr>
+              <tr>
+                <td>Jeanfraiber Medina</td>
+                <td>jeantonio24@gmail.com</td>
+                <td>04122786023</td>
+              </tr>
+              <tr>
+                <td>Gabriel Ramos</td>
+                <td>gabielalejandro606@gmail.com</td>
+                <td>04241166875</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </body>
     </html>
 
@@ -121,7 +132,8 @@
         <p>
           &copy; 2024.
           <a href="https://www.facebook.com/FormateosGR606" target="_blank"
-            >Todos los derechos reservados. GRamos.</a>
+            >Todos los derechos reservados. GRamos.</a
+          >
         </p>
       </div>
       <script src="scripts/main.js"></script>
