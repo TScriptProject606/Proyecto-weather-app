@@ -29,7 +29,6 @@ body {
   text-align: center;
 }
 
-
 /*Formulario de Registro*/
 #register {
   display: flex;
@@ -44,7 +43,6 @@ body {
   text-align: center;
 }
 
-
 /*Caja API*/
 .weather {
   display: flex;
@@ -54,6 +52,8 @@ body {
   height: 80vh;
   padding: 5em;
   border-radius: 0.5em;
+  text-align: center;
+  color: #162eb5;
 }
 
 /*Cuadro de Cerrar session*/
