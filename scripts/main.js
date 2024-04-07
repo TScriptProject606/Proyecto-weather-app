@@ -1,26 +1,24 @@
-const nav = document.getElementById("nav");
+const navItems = document.getElementById("nav-items");
 
 const userLogged = localStorage.getItem("currentUser");
 
 if (userLogged) {
-  nav.innerHTML = `
-    <ul>
-      <li>
-        <a href="Home.html">Inicio</a>
-      </li>
-      <li>
-        <a href="index.html">Mi Clima</a>
-      </li>
-      <li>
-        <a href="perfil.html">Mi Perfil</a>
-      </li>
-      <li>
-        <a id="cerrar-sesion" href="#">Cerrar Sesión</a>
-      </li>
-      <li>
-        <a href="contact.html">Contacto</a>
-      </li>
-    </ul>
+  navItems.innerHTML = `
+    <li>
+      <a href="Home.html">Inicio</a>
+    </li>
+    <li>
+      <a href="index.html">Mi Clima</a>
+    </li>
+    <li>
+      <a href="perfil.html">Mi Perfil</a>
+    </li>
+    <li>
+      <a id="cerrar-sesion" href="#">Cerrar Sesión</a>
+    </li>
+    <li>
+      <a href="contact.html">Contacto</a>
+    </li>
   `;
 }
 

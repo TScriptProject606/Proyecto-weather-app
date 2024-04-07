@@ -145,12 +145,35 @@ header div img {
   width: 100%;
 }
 
+header input[type="checkbox"] {
+  display: none;
+}
+
+header input[type="checkbox"]:not(:checked) + ul {
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+header label {
+  font-size: 3em;
+}
+
 nav ul {
+  position: fixed;
   display: flex;
+  flex-direction: column;
+  gap: 1em 0;
+  right: 1em;
+  top: 5em;
+  padding: 2em;
+  background-color: #0e1425;
+  transition: 0.5s;
+  opacity: 1;
+  transform: scale(1);
 }
 
 nav ul li {
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 nav ul li a {
@@ -228,6 +251,7 @@ footer a {
 
 footer p {
   color: #ccc;
+  text-indent: 0;
 }
 
 .social {
