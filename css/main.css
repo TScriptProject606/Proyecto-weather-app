@@ -97,24 +97,18 @@ dialog::backdrop {
 
 /*Tabla de contactos*/
 table {
-  background-color: #fff;
   padding: 5em;
   border-radius: 0.5em;
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
   color: #110f0f;
 }
 
 th,
 td {
-  border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 20px;
   text-align: center;
-}
-
-th {
-  background-color: #f2f2f2;
 }
 
 #contact {
@@ -170,10 +164,6 @@ nav ul {
   transition: 0.5s;
   opacity: 1;
   transform: scale(1);
-}
-
-nav ul li {
-  /* margin-right: 20px; */
 }
 
 nav ul li a {
@@ -234,7 +224,9 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #6d39c3;
+  text-decoration: none;
+  inline-size: none;
 }
 
 /* Estilos del pie de página */
@@ -270,7 +262,7 @@ footer p {
 }
 
 .social li a:hover {
-  color: #ccc;
+  color: #6d39c3;
 }
 
 button {
