@@ -11,5 +11,11 @@ formRegister.addEventListener("submit", (event) => {
     return;
   }
 
+  if (rest["contrasena"] !== rest["confirmar-contrasena"]) {
+    alert("Las contraseñas no coinciden");
+    return;
+  }
+
   localStorage.setItem(usuario, JSON.stringify(rest));
+  alert("Registrado con exito!");
 });

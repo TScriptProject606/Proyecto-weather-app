@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0;
   padding: 0;
   background-image: url(https://cdn.discordapp.com/attachments/1224958614570274878/1225608516916482129/depositphotos_61868743-stock-photo-weather-forecast-concept.jpg?ex=6621bfe1&is=660f4ae1&hm=8cb6c3b6499b7f8863e381278493e563958529cd02337caf14a433e5c23cb7b6&);
@@ -25,6 +25,10 @@ body {
   height: 80vh;
   text-align: center;
 }
+#login input {
+  text-align: center;
+}
+
 
 /*Formulario de Registro*/
 #register {
@@ -35,6 +39,11 @@ body {
   height: 80vh;
   text-align: center;
 }
+
+#register input {
+  text-align: center;
+}
+
 
 /*Caja API*/
 .weather {
@@ -56,7 +65,7 @@ dialog::backdrop {
     dodgerblue,
     green
   );
-  opacity: 0.75
+  opacity: 0.75;
 }
 
 #perfil {
@@ -66,12 +75,24 @@ dialog::backdrop {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0.5em;
-  padding: 5em 0;
   height: 80vh;
+  padding: 0 3em;
 }
 
-#perfil input {
-  min-width: 300px;
+.perfil__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.perfil__container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil__container input {
+  text-align: center;
 }
 
 /*Tabla de contactos*/
@@ -94,6 +115,16 @@ td {
 
 th {
   background-color: #f2f2f2;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5em;
 }
 
 /* Estilos de la cabecera */
@@ -148,6 +179,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 h3 {
   font-size: 18px;
   color: #2b1bbd;
@@ -162,6 +197,7 @@ p {
   line-height: 1.5;
   color: #150f21;
   font-size: 1;
+  text-indent: 2em;
 }
 
 strong {
