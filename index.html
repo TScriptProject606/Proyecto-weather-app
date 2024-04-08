@@ -3,94 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Iconos redes sociales https://codepen.io/mosbth/pen/qBEeJpg-->
+    <!-- Enlaces a hojas de estilo externas -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="/your_path_to_version_6_files/css/fontawesome.css" rel="stylesheet">
-    <!--Iconos generales https://www.bootstrapcdn.com-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>El clima en tus manos/Api Weather-App</title>
     <link rel="stylesheet" href="css/main.css">
+    <title>El clima en tus manos/Api Weather-App</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="assets/img/icono.jpeg" />
+            <img src="assets/img/icono.jpeg" alt="Icono de la aplicación">
         </div>
         <h1>El Clima En Tus Manos App Web.</h1>
         <nav>
+            <!-- Menú desplegable -->
             <label for="menu" tabindex="0"> ☰ </label>
-            <input id="menu" type="checkbox" />
+            <input id="menu" type="checkbox">
             <ul id="nav-items">
-                <li>
-                    <a href="Home.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="index.html">Mi Clima</a>
-                </li>
-                <li>
-                    <a href="perfil.html">Mi Perfil</a>
-                </li>
-                <li>
-                    <a id="cerrar-sesion" href="#">Cerrar Sesión</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contacto</a>
-                </li>
+                <li><a href="Home.html">Inicio</a></li>
+                <li><a href="index.html">Mi Clima</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a id="cerrar-sesion" href="#">Cerrar Sesión</a></li>
+                <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Diálogo para confirmación de cierre de sesión -->
     <dialog>
-        <h1>Seguro que quieres cerrar sesion?</h1>
-        <button id="cerrar-sesion__confirmacion">Si</button>
+        <h1>¿Seguro que quieres cerrar sesión?</h1>
+        <button id="cerrar-sesion__confirmacion">Sí</button>
         <button id="cerrar-modal">No</button>
     </dialog>
-<section>
-    <div class="container">
-        <div class="weather">
-            <h1>Tu Clima.</h1>
-            <div id="weather-info">
-                <h2>Ciudad: </h2>
-                <p>Temperatura: </p>
-                <p>Descripción: </p>
-                <p>Humedad: </p>
-                <p>Viento: </p>
-            </div>
-            <select name="countries" id="countries"></select>
-        </div>
-    </div>
-</section>
-</html>
-<footer>
-    <div class="flag-wrapper">
-        <div class="icon-text">
-            <div class="icon-text-icon">
-            </div>
-            <div class="icon-text-text">
-                <ul class="social">
-                    <li>
-                        <a href="mailto:serviciotecnicogc2014@gmail.com" target="_blank">
-                            <i class="fa fa-envelope-o"></i> Correo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/FormateosGR606" target="_blank">
-                            <i class="fa fa-facebook-square"></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/Gabrielramos606/?fbclid=IwAR3nZOUevzCqOgAlALa4Ph-YlFWv4eheu7sgwrwxhwL03x80u3tnd2BwcGs" target="_blank">
-                            <i class="fa fa-instagram"></i> Instagram
-                        </a>
-                    </li>
-                </ul>
+    <section>
+        <div class="container">
+            <div class="weather">
+                <h1>Tu Clima.</h1>
+                <div id="weather-info">
+                    <h2>Ciudad:</h2>
+                    <p>Temperatura:</p>
+                    <p>Descripción:</p>
+                    <p>Humedad:</p>
+                    <p>Viento:</p>
+                </div>
+                <select name="countries" id="countries"></select>
             </div>
         </div>
-        <p>&copy; 2024. <a href="https://www.facebook.com/FormateosGR606" target="_blank">Todos los derechos reservados.</a></p>
-    </div>
-</footer>
-<script src="scripts/main.js"></script>
-<script src="scripts/bloquearPagina.js"></script>
-<script src="scripts/index.js"></script>
+    </section>
+    <footer>
+        <div class="flag-wrapper">
+            <div class="icon-text">
+                <div class="icon-text-icon"></div>
+                <div class="icon-text-text">
+                    <!-- Enlaces a redes sociales -->
+                    <ul class="social">
+                        <li><a href="mailto:serviciotecnicogc2014@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i> Correo</a></li>
+                        <li><a href="https://www.facebook.com/FormateosGR606" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/Gabrielramos606/?fbclid=IwAR3nZOUevzCqOgAlALa4Ph-YlFWv4eheu7sgwrwxhwL03x80u3tnd2BwcGs" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; 2024. <a href="https://www.facebook.com/FormateosGR606" target="_blank">Todos los derechos reservados.</a></p>
+        </div>
+    </footer>
+    <!-- Scripts al final de la página -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/bloquearPagina.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

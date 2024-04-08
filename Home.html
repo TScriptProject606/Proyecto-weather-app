@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
+    <!-- Configuración del documento -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Iconos redes sociales https://codepen.io/mosbth/pen/qBEeJpg-->
+    
+    <!-- Estilos externos -->
+    <!-- Iconos de redes sociales -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!--Iconos generales https://www.bootstrapcdn.com-->
+    <!-- Iconos generales -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    
+    <!-- Título de la página y estilos internos -->
     <title>El Clima en tus manos/Inicio</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- Encabezado -->
     <header>
       <div>
+        <!-- Logo de la aplicación -->
         <img src="assets/img/icono.jpeg" />
       </div>
+      <!-- Título de la aplicación -->
       <h1>El Clima En Tus Manos App Web.</h1>
+      <!-- Menú de navegación -->
       <nav>
         <label for="menu" tabindex="0"> ☰ </label>
         <input id="menu" type="checkbox" />
         <ul id="nav-items">
+          <!-- Enlaces del menú -->
           <li>
             <a href="Home.html">Inicio</a>
           </li>
@@ -41,13 +51,16 @@
         </ul>
       </nav>
     </header>
+    <!-- Cuadro de diálogo para confirmar cierre de sesión -->
     <dialog>
       <h1>Seguro que quieres cerrar sesion?</h1>
       <button id="cerrar-sesion__confirmacion">Si</button>
       <button id="cerrar-modal">No</button>
     </dialog>
+    <!-- Sección principal -->
     <div>
       <section>
+        <!-- Título y descripción de la aplicación -->
         <h2><strong> Ficha Tecnica. </strong></h2>
         <p>
           Es una aplicación móvil y web diseñada para proporcionar información
@@ -56,7 +69,9 @@
           actividades al aire libre, tomar decisiones informadas relacionadas
           con el clima y estar preparados para eventos climáticos adversos.
         </p>
+        <!-- Características principales -->
         <h3>Características Principales:</h3>
+        <!-- Detalles de características -->
         <h5>Información Meteorológica Detallada:</h5>
         <p>
           Proporciona datos meteorológicos precisos, incluyendo temperatura
@@ -65,19 +80,21 @@
         </p>
         <h5>Seguimiento de Eventos Climáticos:</h5>
         <p>
-          Ofrece seguimiento en tiempo real del estado del climá en su ubicacion
-          actual o País a consultar.
+          Ofrece seguimiento en tiempo real del estado del clima en su ubicación
+          actual o país a consultar.
         </p>
         <h5>Plataformas Compatibles:</h5>
         <p>
-          Dispositivos Portatiles, PC de escritorio & Dispositivos móviles como
-          tablet y telefonos iOS y Android. Compatible con Navegadores web tales
-          como Chrome, Opera, Firefox, Safari, Edge, etc.
+          Dispositivos portátiles, PC de escritorio y dispositivos móviles como
+          tabletas y teléfonos iOS y Android. Compatible con navegadores web
+          tales como Chrome, Opera, Firefox, Safari, Edge, etc.
         </p>
       </section>
     </div>
+    <!-- Pie de página -->
     <footer>
       <div class="flag-wrapper">
+        <!-- Enlaces a redes sociales -->
         <div class="icon-text">
           <div class="icon-text-icon"></div>
           <div class="icon-text-text">
@@ -109,14 +126,15 @@
             </ul>
           </div>
         </div>
+        <!-- Derechos de autor -->
         <p>
           &copy; 2024.
           <a href="https://www.facebook.com/FormateosGR606" target="_blank"
-            >Todos los derechos reservados.</a
-          >
+            >Todos los derechos reservados.</a>
         </p>
       </div>
     </footer>
+    <!-- Script -->
     <script src="scripts/main.js"></script>
   </body>
 </html>
